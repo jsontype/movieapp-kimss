@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>무비 리스트</h1>
+      <h1 className="appTitle">무비 리스트</h1>
       {render}
     </div>
   )
