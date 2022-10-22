@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
+import Title from './components/Title'
 
 function App() {
   const [movies, setMovies] = useState([])
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="appTitle">무비 리스트</h1>
+      <Title />
       {render}
     </div>
   )
