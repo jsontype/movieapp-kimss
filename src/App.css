@@ -20,7 +20,7 @@
 }
 
 .movie .movieTitle:hover {
-  background-color: pink;
+  background-color: gray;
 }
 
 .movie .movieYear {
