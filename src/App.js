@@ -16,7 +16,7 @@ function App() {
     return (
       <div className='movie' key={item.id}>
         <a className='movieTitle' href={item.url}>{item.title}</a>
-        <img className='movieImage' src={item.background_image} alt={item.title}></img>
+        <img className='movieImage' src={item.large_cover_image} alt={item.title}></img>
         <div className='movieYear'>{item.year}</div>
       </div>
     )
