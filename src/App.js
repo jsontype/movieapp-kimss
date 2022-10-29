@@ -17,6 +17,7 @@ function App() {
     return (
       <div className='movie' key={item.id}>
         <a className='movieTitle' href={item.url}>{item.title}</a>
+        <div>평점 : <span>{item.rating}</span></div>
         <img className='movieImage' src={item.large_cover_image} alt={item.title}></img>
         <div className='movieYear'>{item.year}</div>
       </div>
