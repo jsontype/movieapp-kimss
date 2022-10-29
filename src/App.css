@@ -18,17 +18,16 @@
 
 .movie .movieImage {
   width: 150px;
-  
+}
+
+.movie .movieTitle:hover {
+  background-color: gray;
 }
 
 .movie .movieTitle {
   flex-grow: 1;
   text-decoration: none;
   color: black;
-}
-
-.movie .movieTitle:hover {
-  background-color: gray;
 }
 
 .movie .movieYear {
