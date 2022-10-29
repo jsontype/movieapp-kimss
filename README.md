@@ -1,3 +1,11 @@
+[깃 명령어]
+git checkout -b feat/# : 브런치 만들기
+git checkout feat/# : 브런치 이동
+git add . : 스테이징
+git commit -m "feat: 기능명" : 커밋
+git push origin feat/# : 푸시
+풀리퀘스트 날리기
+
 [로직 이슈]
 로직: 영화 평점의 표시
     title 옆에 (8/10)의 형태로 표시
