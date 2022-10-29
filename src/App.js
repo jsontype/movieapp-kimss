@@ -12,12 +12,13 @@ function App() {
   }, [])
 
   console.log('movies: ', movies)
-
+  
   const render = movies.map((item) => {
+    const hotIcon = item.rating >= 8 && '🔥'
     return (
       <div className='movie' key={item.id}>
         <a className='movieTitle' href={item.url}>{item.title}</a>
-        <div>평점 : <span>{item.rating}</span></div>
+        <div>평점 : <span>{hotIcon}{item.rating}</span></div>
         <img className='movieImage' src={item.large_cover_image} alt={item.title}></img>
         <div className='movieYear'>{item.year}</div>
       </div>
