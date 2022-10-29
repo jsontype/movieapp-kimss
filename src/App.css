@@ -12,20 +12,22 @@
   border: 1px solid gray;
   border-radius: 5px;
   padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .movie .movieImage {
   width: 150px;
 }
 
+.movie .movieTitle:hover {
+  background-color: gray;
+}
+
 .movie .movieTitle {
   flex-grow: 1;
   text-decoration: none;
   color: black;
-}
-
-.movie .movieTitle:hover {
-  background-color: gray;
 }
 
 .movie .movieYear {
