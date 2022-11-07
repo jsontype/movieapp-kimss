@@ -7,21 +7,21 @@ export default function MovieList({movies}) {
           const movieRankClass = item.rating >= 8 ? 'good' :item.rating >=6 ? 'soso' : 'bad'
           const hotIcon = item.rating >= 9 && '🔥'
 
+          //XML  
+            return (
+              <div key={item.id}>
+                <a className='movieTitle' href={item.url}>{hotIcon}{item.title}</a>
+                <div>평점 : <span className={movieRankClass}>{item.rating}</span> /10점</div>
+                <img src={item.large_cover_image} alt={item.title}></img>
+              </div>
+            )
+          })
+    return (
+      <>
+      {render}
+      </>
+    )
+  }
         
-        //XML  
-          return (
-            <div key={item.id}>
-              <a className='movieTitle' href={item.url}>{hotIcon}{item.title}</a>
-              <div>평점 : <span className={movieRankClass}>{item.rating}</span> /10점</div>
-              <img src={item.large_cover_image} alt={item.title}></img>
-            </div>
-          )
-        })
-  return (
-    <>
-    {render}
-    </>
-  )
-}
 
 
