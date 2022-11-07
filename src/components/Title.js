@@ -9,9 +9,9 @@ export default function MovieList({movies}) {
         //XML  
         return (
             <div key={item.id}>
-            <a className='movieTitle' href={item.url}>{hotIcon}{item.title}</a>
-            <div>평점 : <span className={movieRankClass}>{item.rating}</span> /10점</div>
-            <img src={item.large_cover_image} alt={item.title}></img>
+              <a className='movieTitle' href={item.url}>{hotIcon}{item.title}</a>
+              <div>평점 : <span className={movieRankClass}>{item.rating}</span> /10점</div>
+              <img src={item.large_cover_image} alt={item.title}></img>
             </div>
         )
     })
