@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import Title from './components/Title'
 import MovieList from './components/MovieList'
 
 export default function App() {
@@ -18,7 +19,7 @@ console.log(movies)
 //XML
   return (
     <div className="App">
-      <h1>무비리스트</h1>
+      <Title />
       <MovieList movies={movies} />
        </div>
   )
