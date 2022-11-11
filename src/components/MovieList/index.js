@@ -11,7 +11,7 @@ export default function MovieList({movies}) {
     //XML  
     return (
       <div key={item.id}>
-        <a className='movieTitle' href={item.url}>{hotIcon}{item.title}</a>
+        <a className='movieTitle' href={item.url}>{hotIcon}{item.title} ({item.year})</a>
         <div>평점 : <span className={movieRankClass}>{itemRating}</span> /10점</div>
         <img src={item.large_cover_image} alt={item.title}></img>
       </div>
