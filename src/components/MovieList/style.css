@@ -8,6 +8,10 @@
     text-decoration: none;
   }
   
+  .movieImage {
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
   .movieTitle:hover {
     background: gray;
   }
