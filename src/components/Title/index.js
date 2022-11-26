@@ -1,8 +1,6 @@
 import React from 'react'
-import './style.css'
+import styles from "./style.module.css";
 
 export default function Title() {
-    return (
-        <h1 className="appTitle">무비 앱</h1>
-    )
+  return <h1 className={styles.appTitle}>무비 앱</h1>;
 }
