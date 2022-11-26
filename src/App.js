@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import styles from "./App.module.css";
+import styles from "./App.module.scss";
 import Title from "./components/Title";
 import MovieList from "./components/MovieList";
 

@@ -1,6 +1,8 @@
+@import '../../styles/resources.scss';
+
 .movieTitle {
   display: block;
-  border: 1px solid gray;
+  border: 1px solid $color-gray;
   border-radius: 5px;
   width: 500px;
   color: black;
@@ -8,22 +10,22 @@
 }
 
 .movieImage {
-  border: 1px solid gray;
+  border: 1px solid $color-gray;
   border-radius: 5px;
 }
 
 .movieTitle:hover {
-  background: gray;
+  background: $color-gray;
 }
 
 .good {
-  color: blue;
+  color: $color-blue;
 }
 
 .soso {
-  color: green;
+  color: $color-green;
 }
 
 .bad {
-  color: red;
+  color: $color-red;
 }
