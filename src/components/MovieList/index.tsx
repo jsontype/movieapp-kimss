@@ -1,7 +1,20 @@
-import React from 'react'
 import styles from "./style.module.scss";
 
-export default function MovieList({ movies }) {
+type MovieListItemProps = {
+  rating: number,
+  genres: string[],
+  id: number,
+  title: string,
+  year: string,
+  url: string,
+  large_cover_image: string,
+}
+
+type MovieListProps = {
+  movies: MovieListItemProps[]
+}
+
+export default function MovieList({ movies }: MovieListProps) {
   const render = movies.map((item) => {
     //JS
     const movieRankClass =
