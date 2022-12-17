@@ -1,13 +1,13 @@
-import styles from "./style.module.scss";
+import styles from "./style.module.scss"
 
 type MovieListItemProps = {
-  rating: number,
-  genres: string[],
-  id: number,
-  title: string,
-  year: string,
-  url: string,
-  large_cover_image: string,
+  rating: number
+  genres: string[]
+  id: number
+  title: string
+  year: string
+  url: string
+  large_cover_image: string
 }
 
 type MovieListProps = {
@@ -18,14 +18,15 @@ export default function MovieList({ movies }: MovieListProps) {
   const render = movies.map((item) => {
     //JS
     const movieRankClass =
-      item.rating >= 8 ? "good" : item.rating >= 6 ? "soso" : "bad";
-    const hotIcon = item.rating >= 9 && "🔥";
-    const itemRating = item.rating || "평점없음";
-    const genres = item.genres.join(", ");
+      item.rating >= 8 ? "good" : item.rating >= 6 ? "soso" : "bad"
+    const hotIcon = item.rating >= 9 && "🔥"
+    const itemRating = item.rating || "평점없음"
+    const genres = item.genres.join(", ")
 
     //XML
     return (
       <div key={item.id}>
+        <h1>무비 앱</h1>
         <a className={styles.movieTitle} href={item.url}>
           {hotIcon}
           {item.title} ({item.year})
@@ -43,8 +44,8 @@ export default function MovieList({ movies }: MovieListProps) {
           alt={item.title}
         ></img>
       </div>
-    );
-  });
+    )
+  })
 
-  return <>{render}</>;
+  return <>{render}</>
 }
