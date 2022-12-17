@@ -26,7 +26,6 @@ export default function MovieList({ movies }: MovieListProps) {
     //XML
     return (
       <div key={item.id}>
-        <h1>무비 앱</h1>
         <a className={styles.movieTitle} href={item.url}>
           {hotIcon}
           {item.title} ({item.year})

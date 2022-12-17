@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react'
-import styles from "./App.module.scss";
-
+import styles from "./App.module.scss"
 import { Routes, Route, Link } from "react-router-dom"
-
 import Title from "./components/Title"
 import MovieList from "./components/MovieList"
-import Todos from "./components/Todos"
+import TodosContainer from "./components/Todos/container"
 
 export default function App() {
   //js
@@ -42,7 +40,14 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Title />} />
         <Route path="/movies" element={<MovieList movies={movies} />} />
-        <Route path="/todos" element={<Todos />} />
+        <Route
+          path="/todos"
+          element={
+            <>
+              <TodosContainer />
+            </>
+          }
+        />
       </Routes>
     </div>
   )
